@@ -1,0 +1,17 @@
+# Show ESP32 traffic
+ip.addr == ***.**.**.**
+
+# Show HTTP packets
+http
+
+# Show ESP32 HTTP traffic only
+http && ip.addr == ***.**.**.**
+
+# Show communication with bridge server
+tcp.port == 3000
+
+# Show only HTTP requests
+http.request
+
+# Show server responses
+http.response
